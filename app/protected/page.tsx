@@ -1,4 +1,5 @@
 import { redirect } from "next/navigation";
+import page from db
 
 import { createClient } from "@/lib/supabase/server";
 import { InfoIcon } from "lucide-react";
@@ -32,5 +33,6 @@ export default async function ProtectedPage() {
         <FetchDataSteps />
       </div>
     </div>
+    <page />
   );
 }
